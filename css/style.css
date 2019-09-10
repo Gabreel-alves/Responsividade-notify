@@ -7,7 +7,7 @@ body{
                          'main main'
                          'footer footer';
     grid-template-columns:   50vw 50vw;    
-    grid-template-rows: 30vh 100vh 25vh 30vh 15vh;        margin: 0;
+    grid-template-rows: 30vh 75vh 25vh 30vh 15vh;        margin: 0;
     padding: 0;         
 }
 
@@ -47,24 +47,25 @@ header .imagens div:nth-child(1){
 }
 nav{
     grid-area:nav;
-}
-nav .container div{
-    
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    
+}
+nav .container div img{
+    background-color: aqua;
+    border-radius: 30px;
     margin-left: 105px;
-    margin-bottom: 50px;
-    margin-top: 25px;
-    width: 110px
+    margin-top: 5px;
+    padding: 5px;
+    
+   
     
 }
 nav .container h3{
     display: flex;
     align-content: center;
 }
-nav .container div:nth-child(1){
-    background-color: aqua
-}
+
 section{
  grid-area:section;
 }
