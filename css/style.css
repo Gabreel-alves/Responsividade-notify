@@ -1,0 +1,70 @@
+body{
+   display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-areas: 'header header' 
+                         'nav nav'
+                         'section section'
+                         'main main'
+                         'footer footer';
+    grid-template-columns:   50vw 50vw;    
+    grid-template-rows: 30vh 100vh 25vh 30vh 15vh;        margin: 0;
+    padding: 0;         
+}
+
+header{
+    background-image:  url("../images/banner.png");
+    background-size: cover;
+    grid-area:header;
+}
+header div h1{
+    color: #fffbf8;
+   
+    font-family: 'Pacifico', cursive; 
+}
+header div {    
+    padding: 0 30px;
+    color: #fffbf8  
+}
+/* .imagens é a classe q envolve todas as imagens*/
+header .imagens{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header .imagens div:nth-child(1){
+  background-color: #35241d;
+    border-radius: 39px;
+      padding:4px;
+}header .imagens div:nth-child(2){
+  background-color: #35241d;
+      border-radius: 39px;
+    padding:4px;
+    
+}header .imagens div:nth-child(3){
+  background-color: #35241d;
+      border-radius: 39px;
+    padding:4px;
+}
+nav{
+    grid-area:nav;
+}
+nav .container div{
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 105px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    width: 110px
+    
+}
+nav .container h3{
+    display: flex;
+    align-content: center;
+}
+nav .container div:nth-child(1){
+    background-color: aqua
+}
+section{
+ grid-area:section;
+}
