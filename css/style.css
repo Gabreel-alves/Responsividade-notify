@@ -32,6 +32,9 @@ header .imagens{
    
     justify-content: space-around;
 }
+header .hand_image{
+    display: none;
+}
 header .imagens div:nth-child(1){
   background-color: #35241d;
     border-radius: 39px;
@@ -75,3 +78,10 @@ nav .container h3{
 section{
  grid-area:section;
 }
+
+
+
+@media(min-width:400px){
+
+
+    
