@@ -1,7 +1,10 @@
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
+    grid-template-areas: 'header header' 'nav nav' 
+                          'section section' 
+                          'main main' 
+                          'footer footer';
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 35vh 75vh 25vh 30vh 15vh;
     margin: 0;
@@ -72,11 +75,11 @@ nav .container {
 }
 
 nav .container div img {
-    background-color: aqua;
-    border-radius: 30px;
+    background-color: #2dcb70;
+    border-radius: 50px;
     margin-left: 105px;
-    margin-top: 5px;
-    padding: 5px;
+    margin-top: 10px;
+    padding: 10px;
 }
 
 nav .container h3 {
