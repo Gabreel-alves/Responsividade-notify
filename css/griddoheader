@@ -1,0 +1,18 @@
+header{
+    display: grid;
+    grid-template-areas: 'ladoesquerdo ladodireito'
+    grid-template-columns: 50% 50%;
+}
+
+.ladoesquerdo{
+    grid-area: ladoesquerdo
+    display: flex;
+    align-itens: center;
+    justify-content: center;
+}
+
+.hand{
+    grid-area: ladodireito
+    display: flex;
+    align-itens: flex-end;
+}
