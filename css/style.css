@@ -1,7 +1,8 @@
 body {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    grid-template-areas: 'header header' 'nav nav' 
+    grid-template-areas: 'header header' 
+                        'nav nav' 
                           'section section' 
                           'main main' 
                           'footer footer';
@@ -89,6 +90,26 @@ nav .container h3 {
 section {
     grid-area: section;
 }
+
+section{
+    
+    background-color: #e3e3e3;
+    padding: 10px;
+}
+
+section h2{
+    font-family: 'roboto';
+    color: #313131;
+    font-size: 19px;
+}
+section p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #4e4e4e;
+
+}
+
+
 
 
 /*responsivo para tablete*/
