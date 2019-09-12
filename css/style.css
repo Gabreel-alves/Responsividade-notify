@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 75vh 25vh 30vh 15vh;
+    grid-template-rows: 35vh 75vh 80vh 30vh 15vh;
     margin: 0;
     padding: 0;
 }
@@ -57,13 +57,15 @@ header .imagens div:nth-child(3) {
 }
 
 header p {
-    font-size: 20px;
+    font-size: 19px;
+    
 }
 
 nav {
     grid-area: nav;
     display: flex;
     justify-content: center;
+    
 }
 
 nav .container {
@@ -83,10 +85,48 @@ nav .container div img {
 nav .container h3 {
     text-align: center;
 }
-
+nav p{
+    color: #c0c0c0
+}
 section {
     grid-area: section;
+    background-color: #e3e3e3;
+    margin-top: 20px;
 }
+section div h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+section input[type="email"]{
+    border-radius: 5px 0 0 5px;
+    height: 30px;
+    margin-left: 95px;
+    border: none;
+    
+    
+}
+section input[type="button"]{
+    background-color:#2dcc70;
+    border:none;
+    border-radius: 0 5px 5px 0;
+    color:white;
+    height: 30px;
+   
+}
+section div iframe{
+    align-content: center;
+    display: flex;
+    height: 230px;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 80%;
+}
+section p{
+   text-align: center;
+   padding: 0 20px;
+}
+
 
 
 /*responsivo para tablete*/
@@ -97,7 +137,7 @@ section {
         font-family: 'Roboto', sans-serif;
         grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 45vh 35vh 25vh 30vh 15vh;
+        grid-template-rows: 45vh 35vh 80vh 30vh 15vh;
         margin: 0;
         padding: 0;
     }
@@ -114,27 +154,59 @@ section {
         background-color: #35241d;
         border-radius: 39px;
         padding: 4px;
-    }
-    header p {
+}
+ header p {
         font-size: 29px;
-    }
-    header .imagens {
+}
+ header .imagens {
         display: flex;
-    }
-     nav .container {
+}
+  nav .container {
         display: flex;
         flex-direction: row;
         justify-content:
-    }
-    nav .container .ladoesquerdo {
+}
+ nav .container .ladoesquerdo {
         margin-right: 100px;
-    }
-    nav .container .ladodireito {
+}
+ nav .container .ladodireito {
         margin-left: 100px;
-    }
-    nav .container p {
+}
+ nav .container p {
         text-align: center;
+}
+    section{
+        grid-area:section;
+        
+        
     }
+    section div:nth-child(2){
+         display: flex;
+        align-content: center;
+        justify-content: center;
+       
+    }
+    section div:nth-child(3){
+         display: flex;
+        align-content: center;
+        justify-content: center;
+       
+    }
+    section div h2 {
+    text-align: center!important;
+    margin-top: 20px;
+}
+section input[type="email"] ,input[type="button"]{
+    
+    border-radius: 5px 0 0 5px;
+   
+    
+    height: 30px;
+    border: none;
+    
+    
+}
+    
 }
 
 
@@ -146,7 +218,7 @@ section {
         font-family: 'Roboto', sans-serif;
         grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 45vh 35vh 25vh 30vh 15vh;
+        grid-template-rows: 45vh 35vh 60vh 30vh 15vh;
         margin: 0;
         padding: 0;
     }
@@ -173,8 +245,8 @@ section {
         width: 40%
     }
     header .imagens{
-      margin-right: 400px;
-      margin-bottom: 25px;     
+    
+      margin-bottom: 35px;     
     }
     header {
         display: grid;
@@ -200,4 +272,39 @@ section {
     nav .container p {
         text-align: center;
     }
+    
+    section{
+      display:grid;  
+      grid-template-areas: 'lado_esquerdo lado_direito';
+      grid-template-columns: 50% 50%;
+    }
+    
+    .lado_esquerdo{
+        align-content:flex-start;
+        align-items: center;
+        grid-area:lado_esquerdo;
+        display:flex;
+        justify-content: center;
+        margin-top: 75px;
+        flex-wrap: wrap;
+    }
+    .lado_direito{
+        align-content:flex-start;
+        align-items: center;
+        grid-area:lado_direito;
+        display:flex;
+        justify-content: center;
+
+    }
+   
+    section .lado_direito  iframe{
+    align-content: center;
+    display: flex;
+    height:300px;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 10px;
+    width: 100%;
+}
+    
 }
