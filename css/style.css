@@ -29,8 +29,9 @@ header div {
 
 header .imagens {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-around;
+    
 }
 
 header .direito img {
@@ -50,7 +51,7 @@ header .imagens div:nth-child(2) {
 }
 
 header .imagens div:nth-child(3) {
-    background-color: #35241d;
+    background-color: #2dcb6f;
     border-radius: 39px;
     padding: 4px;
 }
@@ -72,7 +73,7 @@ nav .container {
 }
 
 nav .container div img {
-    background-color: aqua;
+    background-color: #2dcb6f;
     border-radius: 30px;
     margin-left: 105px;
     margin-top: 5px;
@@ -100,7 +101,8 @@ section {
         margin: 0;
         padding: 0;
     }
-    header {
+    header {background-image: url("../images/banner.png");
+    background-size: cover;
         grid-area: header;
     }
     header .hand img {
@@ -118,6 +120,20 @@ section {
     }
     header .imagens {
         display: flex;
+    }
+     nav .container {
+        display: flex;
+        flex-direction: row;
+        justify-content:
+    }
+    nav .container .ladoesquerdo {
+        margin-right: 100px;
+    }
+    nav .container .ladodireito {
+        margin-left: 100px;
+    }
+    nav .container p {
+        text-align: center;
     }
 }
 
@@ -141,6 +157,9 @@ section {
         align-items: flex-end;
     }
     .esquerdo {
+        margin-left: 100px
+    }
+    .esquerdo {
         grid-area: esquerdo;
         display: flex;
         align-items: center;
@@ -150,31 +169,27 @@ section {
     header .direito img {
         display: block;
         height: 210px;
-        margin-left: 55px;
+        margin-left: 75px;
         width: 40%
+    }
+    header .imagens{
+      margin-right: 400px;
+      margin-bottom: 25px;     
     }
     header {
         display: grid;
         grid-template-areas: 'esquerdo direito';
         grid-template-columns: 50% 50%;
     }
-    header .hand img {
-        height: 150px;
-        align-items: flex-end;
-        float: right;
-    }
-    header .imagens div:nth-child(1) {
-        background-color: #35241d;
-        border-radius: 39px;
-        padding: 4px;
-    }
+ 
+   
     header p {
-        font-size: 29px;
+        font-size: 22px;
     }
     nav .container {
         display: flex;
         flex-direction: row;
-        justify-content:
+        align-items: center;
     }
     nav .container .ladoesquerdo {
         margin-right: 150px;
