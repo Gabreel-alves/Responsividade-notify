@@ -99,7 +99,7 @@ section div h2 {
 }
 section input[type="email"]{
     border-radius: 5px 0 0 5px;
-    height: 30px;
+    height:30px;
     margin-left: 95px;
     border: none;
     
@@ -110,7 +110,7 @@ section input[type="button"]{
     border:none;
     border-radius: 0 5px 5px 0;
     color:white;
-    height: 30px;
+    height: 33px;
    
 }
 section div iframe{
@@ -123,6 +123,7 @@ section div iframe{
     width: 80%;
 }
 section p{
+    color: #979797;
    text-align: center;
    padding: 0 20px;
 }
