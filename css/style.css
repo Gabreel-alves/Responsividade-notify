@@ -7,7 +7,7 @@ body {
                           'main main' 
                           'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 75vh 25vh 30vh 15vh;
+    grid-template-rows: 35vh 65vh 57vh 30vh 15vh;
     margin: 0;
     padding: 0;
 }
@@ -21,8 +21,12 @@ header {
 header div h1 {
     color: #fffbf8;
     font-family: 'Pacifico', cursive;
+    
 }
 
+iframe {
+    margin: 3px;
+}
 header div {
     padding: 0 30px;
     color: #fffbf8
@@ -61,6 +65,7 @@ header .imagens div:nth-child(3) {
 
 header p {
     font-size: 20px;
+    
 }
 
 nav {
@@ -87,30 +92,65 @@ nav .container h3 {
     text-align: center;
 }
 
+nav p {
+    margin: 0px;
+}
+
 section {
     grid-area: section;
 }
 
 section{
     
-    background-color: #e3e3e3;
+    background-color: #e7e7e7;
     padding: 10px;
 }
 
 section h2{
     font-family: 'roboto';
     color: #313131;
-    font-size: 19px;
+    font-size: 22px;
+    text-align: center;
 }
 section p{
     font-size: 14px;
     font-weight: 100;
     color: #4e4e4e;
+    text-align: justify;
+    margin: 18px 8px;
+
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caixa{
+    border-radius: 8px 0px 0px 8px;
+    width: 265px;
+    height: 30px;
+    border: none;
+    margin: 0px 0px 15px 0px;
+    
 
 }
 
 
+.botao{
+    background-color: #2dcb70;
+    width: 100px;
+    height: 32px;
+    color: #fefeff;
+    border: none;
+    border-radius:  0px 8px 8px 0px;
+    padding: 1px;
+    margin: 0px 0px 15px 0px;
+}
 
+
+        
+    
 
 /*responsivo para tablete*/
 
@@ -123,6 +163,7 @@ section p{
         grid-template-rows: 45vh 35vh 25vh 30vh 15vh;
         margin: 0;
         padding: 0;
+        grid-template-rows: 35vh 67vh 40vh 30vh 15vh;
     }
     header {
         grid-area: header;
@@ -143,7 +184,18 @@ section p{
     header .imagens {
         display: flex;
     }
+
+
+    section p{
+    font-size: 14px;
+    font-weight: 100;
+    color: #4e4e4e;
+    
+    iframe {
+        margin: 3px;
+        width: 100;}
 }
+
 
 
 /*resposivo para desktop*/
