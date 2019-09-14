@@ -7,11 +7,33 @@ body {
                           'main main' 
                           'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 65vh 87vh 30vh 15vh;
+    grid-template-rows: 35vh 65vh 87vh 80vh 10vh;
     margin: 0;
     padding: 0;
 }
-
+body::-webkit-scrollbar{
+    width: 0px;
+    background:transparent;
+}
+footer{
+    grid-area:footer;
+    background-color: #e3e3e3;
+   
+}
+footer a {
+    
+     color: #a8a8a8;
+    text-decoration: none;
+    
+}
+footer .links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content:center;
+    flex-wrap: wrap;
+    
+}
 header {
     background-image: url("../images/banner.png");
     background-size: cover;
