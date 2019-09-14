@@ -204,6 +204,7 @@ section div h2 {
  section .lado_direito  iframe{
      
         border-radius:15px;
+        
     }
 
 /*section input[type="email"]{
@@ -490,7 +491,7 @@ footer a {
 
     header .direito img {
         display: block;
-        height: 210px;
+        height: 250px;
         margin-left: 75px;
         width: 40%
     }
@@ -503,7 +504,7 @@ footer a {
         grid-template-areas: 'esquerdo direito';
         grid-template-columns: 50% 50%;
     }
- 
+   
    
     header p {
         font-size: 20px;
