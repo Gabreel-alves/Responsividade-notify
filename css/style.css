@@ -7,7 +7,7 @@ body {
                           'main main' 
                           'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 65vh 84vh 80vh 7vh;
+    grid-template-rows: 35vh 65vh 58vh 80vh 7vh;
     margin: 0;
     padding: 0;
 }
@@ -62,6 +62,7 @@ header .imagens {
     
     justify-content: space-around;
     
+    
 }
 
 header .direito img {
@@ -96,17 +97,19 @@ grid-area:main;
 }
 
 main p  {
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-size: 14px;
+    font-weight: 100;
+    color: #4e4e4e;
     text-align: center;
+    margin: 18px 8px;
+    
+ }
     
 }
 main h3{
    align-content: center;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     
 }
@@ -165,28 +168,28 @@ nav p {
 section {
     grid-area: section;
     background-color: #e3e3e3;
-    margin-top: 20px;
+    
 }
 section div h2 {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
 }
-section input[type="email"]{
+/*section input[type="email"]{
     border-radius: 5px 0 0 5px;
     height:30px;
     margin-left: 95px;
     border: none;
     
     
-}
-section input[type="button"]{
+}*/
+/*section input[type="button"]{
     background-color:#2dcc70;
     border:none;
     border-radius: 0 5px 5px 0;
     color:white;
     height: 33px;
    
-}
+}*/
 section div iframe{
     align-content: center;
     display: flex;
@@ -195,18 +198,6 @@ section div iframe{
     margin-left: 40px;
     margin-top: 10px;
     width: 80%;
-}
-section p{
-    color: #979797;
-   text-align: center;
-   padding: 0 20px;
-}
-
-
-section{
-    
-    background-color: #e7e7e7;
-    padding: 10px;
 }
 
 section h2{
@@ -233,7 +224,7 @@ section p{
 }
 .caixa{
     border-radius: 8px 0px 0px 8px;
-    width: 265px;
+    width: 230px;
     height: 30px;
     border: none;
     margin: 0px 0px 15px 0px;
@@ -263,10 +254,10 @@ section p{
         font-family: 'Roboto', sans-serif;
         grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 45vh 35vh 80vh 75vh 10vh;
+        
         margin: 0;
         padding: 0;
-        grid-template-rows: 35vh 67vh 40vh 30vh 15vh;
+        grid-template-rows: 35vh 40vh 50vh 30vh 15vh;
     }
      footer{
     grid-area:footer;
@@ -389,12 +380,9 @@ main .img_logo{
     section p{
     font-size: 14px;
     font-weight: 100;
-    color: #4e4e4e;
+    color: #4e4e4e;}
     
-    iframe{
-        margin: 3px;
-        width: 100;}
-}
+  
 
 
 
@@ -406,7 +394,7 @@ main .img_logo{
         font-family: 'Roboto', sans-serif;
         grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 45vh 35vh 60vh 30vh 15vh;
+        grid-template-rows: 45vh 35vh 33vh 30vh 15vh;
         margin: 0;
         padding: 0;
     }
@@ -474,13 +462,14 @@ main h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 main h2{
     align-content: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 20px 0px 20px;
 }
 
 main .imagens_rostos{
@@ -530,27 +519,38 @@ main .img_logo{
         align-items: center;
         grid-area:lado_esquerdo;
         display:flex;
-        justify-content: center;
-        margin-top: 75px;
+        
         flex-wrap: wrap;
     }
+
     .lado_direito{
-        align-content:flex-start;
+        align-content:flex-end;
         align-items: center;
         grid-area:lado_direito;
         display:flex;
         justify-content: center;
+        height: 280px;
+        
+    }
+    
+    
+    section h2 {
+        margin-left: 10px;
+    }
 
+    section .caixa{
+        margin-left: 10px;
     }
    
+
     section .lado_direito  iframe{
     align-content: center;
     display: flex;
-    height:300px;
+    height:90%;
     justify-content: center;
     margin-left: 40px;
     margin-top: 10px;
-    width: 100%;
+    width: 75%;
 }
     
 }
