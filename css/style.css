@@ -7,7 +7,7 @@ body {
                           'main main' 
                           'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 65vh 87vh 80vh 10vh;
+    grid-template-rows: 35vh 65vh 84vh 80vh 7vh;
     margin: 0;
     padding: 0;
 }
@@ -108,7 +108,7 @@ main h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    
 }
 main h2{
     align-content: center;
@@ -124,13 +124,14 @@ main .imagens_rostos{
 }
 main .img_logo img{
     height: 40px;
+    
 }
 main .img_logo{
     
     display: flex;
     height: 40px;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 nav {
     grid-area: nav;
