@@ -402,6 +402,49 @@ main .img_logo{
     header p {
         font-size: 22px;
     }
+    main p  {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+main h3{
+   align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+main h2{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .imagens_rostos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    main .imagens_rostos img{
+        height: 38px
+    }
+    main .img_logo img{
+        height: 40px;    
+        
+    }
+main .img_logo{
+    
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+    
     nav .container {
         display: flex;
         flex-direction: row;
