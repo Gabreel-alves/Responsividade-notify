@@ -7,7 +7,7 @@ body {
                           'main main' 
                           'footer footer';
     grid-template-columns: 50vw 50vw;
-    grid-template-rows: 35vh 65vh 58vh 80vh 7vh;
+    grid-template-rows: 35vh 65vh 58vh 65vh 7vh;
     margin: 0;
     padding: 0;
 }
@@ -107,10 +107,8 @@ main p  {
     
 }
 main h3{
-   align-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   display: flex;
+   justify-self: center;
     
 }
 main h2{
@@ -143,17 +141,46 @@ nav {
     
 }
 
+
+
+nav .container .ladoesquerdo  {
+    margin: 10px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav .container .ladodireito {
+    
+display: flex;
+margin-top: 20px;
+justify-items: center;
+align-items: center;
+flex-direction: column; 
+}
+
+nav .container .centro {
+display: flex;
+justify-items: center;
+align-items: center;
+margin-top: 20px;
+flex-direction: column; 
+}
 nav .container {
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+   
+    
 }
 
 nav .container div img {
     background-color: #2dcb70;
     border-radius: 50px;
-    margin-left: 105px;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
     padding: 10px;
 }
 
@@ -172,8 +199,14 @@ section {
 }
 section div h2 {
     text-align: center;
-    margin-top: 35px;
+    margin-top: 20px;
 }
+
+ section .lado_direito  iframe{
+     
+        border-radius:15px;
+    }
+
 /*section input[type="email"]{
     border-radius: 5px 0 0 5px;
     height:30px;
@@ -257,7 +290,7 @@ section p{
         
         margin: 0;
         padding: 0;
-        grid-template-rows: 35vh 40vh 50vh 30vh 15vh;
+        grid-template-rows: 35vh 40vh 53vh 50vh 10vh;
     }
      footer{
     grid-area:footer;
@@ -346,14 +379,32 @@ main .img_logo{
 
   nav .container {
         display: flex;
+        align-content: center;
+        justify-content: center;
         flex-direction: row;
-        justify-content:
 }
- nav .container .ladoesquerdo {
-        margin-right: 100px;
+
+
+ nav .container .ladoesquerdo  {
+        margin: 0;
+        margin-top: 20px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
 }
  nav .container .ladodireito {
-        margin-left: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+nav .container .centro {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column; 
 }
  nav .container p {
         text-align: center;
@@ -363,7 +414,7 @@ main .img_logo{
         
         
     }
-    section div:nth-child(2){
+  /*  section div:nth-child(2){
          display: flex;
         align-content: center;
         justify-content: center;
@@ -374,16 +425,25 @@ main .img_logo{
         align-content: center;
         justify-content: center;
        
-    }
+    }*/
 
 
     section p{
     font-size: 14px;
     font-weight: 100;
-    color: #4e4e4e;}
+    color: #4e4e4e;
+    margin: 25px;
     
-  
+}
 
+    
+    
+    section .lado_direito iframe{
+     
+        border-radius:10px;
+        margin-left: 50px;
+    }
+   
 
 
 /*resposivo para desktop*/
@@ -394,7 +454,7 @@ main .img_logo{
         font-family: 'Roboto', sans-serif;
         grid-template-areas: 'header header' 'nav nav' 'section section' 'main main' 'footer footer';
         grid-template-columns: 50vw 50vw;
-        grid-template-rows: 45vh 35vh 33vh 30vh 15vh;
+        grid-template-rows: 45vh 35vh 33vh 36vh 15vh;
         margin: 0;
         padding: 0;
     }
@@ -519,7 +579,7 @@ main .img_logo{
         align-items: center;
         grid-area:lado_esquerdo;
         display:flex;
-        
+        margin-left: 30px;
         flex-wrap: wrap;
     }
 
@@ -535,11 +595,11 @@ main .img_logo{
     
     
     section h2 {
-        margin-left: 10px;
+        margin-left: 25px;
     }
 
     section .caixa{
-        margin-left: 10px;
+        margin-left: 25px;
     }
    
 
@@ -548,9 +608,10 @@ main .img_logo{
     display: flex;
     height:90%;
     justify-content: center;
-    margin-left: 40px;
-    margin-top: 10px;
-    width: 75%;
+    margin-left: 50px;
+    margin-top: 25px;
+    width: 50%;
+    border-radius:15px;
 }
     
 }
